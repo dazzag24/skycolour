@@ -4,4 +4,14 @@ An introductory project for React that predicts the color of the sky if given th
 
 This is based on this [post](https://blog.devgenius.io/show-me-the-sky-is-blue-using-react-js-part-2-a94f5bc0a44b)
 
+# Installation
 
+```
+npm install
+```
+
+# Usage
+
+```
+npm start
+```
