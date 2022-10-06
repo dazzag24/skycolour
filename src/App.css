@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.sun-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sun {
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  /*background: linear-gradient(120deg, #FFE5B4, #FFEB3B);*/
+  box-shadow: 4px 4px 40px 20px #ffffff, -4px -4px 40px 20px #ffffff;
+  top: 47.5%;
+  animation-name: rise;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes rise {
+  0% {
+      top: 100%;
+      box-shadow: none;
+  }
+  100% {
+      top: 47.5%;
+      box-shadow: 4px 4px 40px 20px #ffffff, -4px -4px 40px 20px #ffffff;
+  }
+}
